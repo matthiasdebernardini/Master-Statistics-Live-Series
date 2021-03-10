@@ -6,3 +6,8 @@ This repository contains files and resources to complement the Codecademy Live: 
   * [Data and code files](https://github.com/Codecademy/Master-Statistics-Live-Series/tree/main/Codecademy%20Live%20Stats%20%231)
   * [Youtube link](https://www.youtube.com/watch?v=YwadRm2sfpQ)
   * Learn more by taking the Variable Types lesson in the [Master Statistics with Python](https://www.codecademy.com/learn/paths/master-statistics-with-python) skill path on Codecademy
+
+# Docker 
+docker pull continuumio/anaconda3
+docker run -i -t continuumio/anaconda3 /bin/bash
+docker run -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser"
